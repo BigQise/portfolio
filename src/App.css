@@ -1,0 +1,13 @@
+.app {
+  width: 100%;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+}
