@@ -6,7 +6,6 @@
 
 .projects h2 {
   text-align: center;
-  color: #333;
   margin-bottom: 2rem;
   font-size: 1.75rem;
 }
@@ -18,7 +17,6 @@
 }
 
 .project-card {
-  background: #f8f9fa;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -49,9 +47,10 @@
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3770b1;
   color: white;
   padding: 0.25rem 0.75rem;
+  /* border: 2px solid #7775d0;   add if want outline on chip*/
   border-radius: 20px;
   font-size: 0.85rem;
 }
@@ -66,7 +65,7 @@
   }
 
   .project-card h3 {
-    color: #a0a8f0;
+    color: #7b94fb;
   }
 
   .project-card p {
