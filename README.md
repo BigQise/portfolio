@@ -1,12 +1,13 @@
 # Portfolio Website
 
-A personal portfolio website for a Computer Science student built with React and Vite.
+My personal portfolio website built with React, CSS and Vite
 
 ## Features
 
 - **Header Section**: Displays name and title
 - **Bio Section**: Personal introduction and background
 - **Projects Section**: Showcase of projects with descriptions and technology tags
+- **Skills Section**: In progress, will be an animated section with skills and their icons
 
 ## Getting Started
 
