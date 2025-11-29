@@ -1,5 +1,5 @@
 .bio {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 2rem;
   padding: 2rem;
   background: #f8f9fa;
@@ -8,7 +8,7 @@
 }
 
 .bio h2 {
-  color: #333;
+  color: #3a53b7;
   margin-bottom: 1rem;
   font-size: 1.75rem;
 }

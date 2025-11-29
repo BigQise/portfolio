@@ -5,11 +5,11 @@ function Bio() {
     <section className="bio">
       <h2>About Me</h2>
       <p>
-        I am a passionate Computer Science student with a strong interest in software engineering, 
-        front-end development, and product development. I enjoy building projects that both solve problems 
-        and allow me to express my creativity. I'm currently pursuing a Bachelor's of Science and I'm 
-        always learning new technologies as I'm currently learning React/Native, TypeScript and Go,
-        outside of regular coursework.
+        I am a passionate Computer Science student with a strong interest in software engineering,
+        product development, and full-stack development. I enjoy building projects that push my problem
+        solving ability and allow me to express my creativity. I'm currently pursuing a Bachelor's of 
+        Science and I'm always learning new technologies as I'm currently learning React/Native, TypeScript, 
+        Go, and Flask, not including what I learn in regular coursework.
       </p>
       <p>
         When I'm not coding, you can find me lifting weights, cooking, playing guitar or drums, 
