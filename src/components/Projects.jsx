@@ -27,7 +27,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'This is the website. It features stuff about me and was built so I can show off more projects that I am currently working on to show my constant learning and also to have fun with React. Much more renovations will come to this site',
     technologies: ['JavaScript', 'React', 'CSS'],
-    link: "", // add link when deployed
+    link: "https://github.com/BigQise/portfolio", // add link when deployed
   }
 ];
 
