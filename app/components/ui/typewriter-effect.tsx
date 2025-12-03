@@ -2,12 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "motion/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const TypewriterEffect = ({
   words,
   className,
   cursorClassName,
+  onComplete,
 }: {
   words: {
     text: string;
@@ -15,6 +16,7 @@ export const TypewriterEffect = ({
   }[];
   className?: string;
   cursorClassName?: string;
+  onComplete?: () => void;
 }) => {
   // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
@@ -24,6 +26,7 @@ export const TypewriterEffect = ({
     };
   });
 
+  const [isFinished, setIsFinished] = useState(false);
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
   useEffect(() => {
@@ -41,6 +44,20 @@ export const TypewriterEffect = ({
           ease: "easeInOut",
         }
       );
+      // if a completion callback was provided, call it after the last
+      // character's animation has finished. Calculate a safe timeout
+      // based on character count, stagger and per-char duration.
+      if (onComplete) {
+        const totalChars = wordsArray.reduce((acc, w) => acc + w.text.length, 0);
+        const lastCharEndSeconds = Math.max(0, (totalChars - 1) * 0.1 + 0.3);
+        const bufferMs = 500; // small buffer to ensure completion
+        const timeout = setTimeout(() => {
+          setIsFinished(true);
+            onComplete(); 
+        },
+        lastCharEndSeconds * 1000 + bufferMs);
+        return () => clearTimeout(timeout);
+      }
     }
   }, [isInView]);
 
@@ -72,28 +89,30 @@ export const TypewriterEffect = ({
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold",
         className
       )}
     >
       {renderWords()}
-      <motion.span
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.8,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        className={cn(
-          // "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
-          cursorClassName
-        )}
-      ></motion.span>
+      {(!onComplete || !isFinished) && (
+        <motion.span
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className={cn(
+            "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
+            cursorClassName
+          )}
+        ></motion.span>
+      )}
     </div>
   );
 };
