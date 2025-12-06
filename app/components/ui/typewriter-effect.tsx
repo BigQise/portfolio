@@ -50,7 +50,7 @@ export const TypewriterEffect = ({
       if (onComplete) {
         const totalChars = wordsArray.reduce((acc, w) => acc + w.text.length, 0);
         const lastCharEndSeconds = Math.max(0, (totalChars - 1) * 0.1 + 0.3);
-        const bufferMs = 500; // small buffer to ensure completion
+        const bufferMs = 500;
         const timeout = setTimeout(() => {
           setIsFinished(true);
             onComplete(); 

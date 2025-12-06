@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const rows = new Array(150).fill(1);
-  const cols = new Array(65).fill(1);
+  const cols = new Array(60).fill(1);
   let colors = [
     "#93c5fd",
     "#f9a8d4",
@@ -24,7 +24,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   return (
     <div
       style={{
-        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
+        transform: `translate(-30%,-140%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
       }}
       className={cn(
         "absolute -top-1/4 left-1/4 z-0 flex h-full w-full -translate-x-1/2 -translate-y-1/2 p-4",
