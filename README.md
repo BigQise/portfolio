@@ -31,6 +31,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is configured for deployment on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Quick Deployment Steps:
+
+1. **Connect Your Repository**
+   - Go to [Vercel](https://vercel.com/new)
+   - Import your GitHub repository
+   - Vercel will automatically detect Next.js configuration
+
+2. **Configure Your Domain** (Optional)
+   - After deployment, go to your project settings
+   - Navigate to "Domains" section
+   - Add your custom domain
+   - Update your domain's DNS records as instructed by Vercel
+
+3. **Environment Variables** (If needed)
+   - Go to project settings
+   - Add any required environment variables
+   - Redeploy for changes to take effect
+
+### Build Configuration
+
+The project uses the standard Next.js build process:
+- **Build Command**: `npm run build` or `next build`
+- **Output Directory**: `.next` (automatic)
+- **Install Command**: `npm install`
+- **Development Command**: `npm run dev`
+
+### Important Notes:
+
+- ✅ GitHub Pages configuration has been removed
+- ✅ No `basePath` or `assetPrefix` required
+- ✅ Vercel automatically handles routing and static assets
+- ✅ The project is ready for deployment without additional configuration
+
+For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
