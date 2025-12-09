@@ -29,15 +29,15 @@ export default function Hero() {
 ];
 // try changing dark:bg to blue later when rest of page is done
     return (
-    <div className="h-screen w-full relative overflow-hidden bg-slate-900 flex flex-row items-center justify-center rounded-md "> 
-      <div className="absolute inset-0 w-full h-full bg-background z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none"/>
+    <div id="home" className="h-screen w-full relative overflow-hidden bg-slate-900 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 xl:gap-30 rounded-md "> 
+      <div className="absolute inset-0 w-full h-full bg-background z-20 mask-[radial-gradient(transparent,white)] pointer-events-none"/>
       <Boxes/>
-      <h1 className="text-center relative z-20 pr-30">
+      <Image src={Qise} alt="Qise's picture" className="z-20 rounded-xl w-60" />
+      {showScroll && <ScrollIndicator />}
+      <h1 className="text-center relative z-20">
         <TypewriterEffect words={words.slice(0,3)} onComplete={() => setShowSecond(true)} />
         {showSecond && <TypewriterEffect words={words.slice(3,6)} onComplete={() => setShowScroll(true)} className=""/>}
       </h1>
-      <Image src={Qise} alt="Qise" width={200} height={200} className="relative z-20 rounded-xl" />
-      {showScroll && <ScrollIndicator />}
     </div>
     )
 }

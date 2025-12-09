@@ -16,7 +16,7 @@ const projects = [
       "A fitness app that includes workout, macro and calorie tracking as well as a social media page for UMN students to share fitness related content with eachother",
     technologies: ['React Native', 'Expo', 'Express', 'Neo4j', 'TypeScript'],
     img: "",
-    link: "https://github.com/umn-adc/gopher-fit-front",
+    link: "https://github.com/umn-adc/gopher-fit-front/tree/dev",
   },
   {
     title: "This Cool Website",
