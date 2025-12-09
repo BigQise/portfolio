@@ -32,12 +32,12 @@ export default function Hero() {
     <div id="home" className="h-screen w-full relative overflow-hidden bg-slate-900 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 xl:gap-30 rounded-md "> 
       <div className="absolute inset-0 w-full h-full bg-background z-20 mask-[radial-gradient(transparent,white)] pointer-events-none"/>
       <Boxes/>
-      <Image src={Qise} alt="Qise's picture" className="z-20 rounded-xl w-60" />
-      {showScroll && <ScrollIndicator />}
+      <Image src={Qise} alt="Qise's picture" className="z-20 rounded-xl xl:w-60 w-45" />
       <h1 className="text-center relative z-20">
         <TypewriterEffect words={words.slice(0,3)} onComplete={() => setShowSecond(true)} />
         {showSecond && <TypewriterEffect words={words.slice(3,6)} onComplete={() => setShowScroll(true)} className=""/>}
       </h1>
+      {showScroll && <ScrollIndicator />}
     </div>
     )
 }

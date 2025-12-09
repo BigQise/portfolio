@@ -12,7 +12,7 @@ export default function Bio() {
                 <div className="space-y-5 text-card-foreground">
                     <p className="text-lg leading-relaxed">
                         I am a passionate Computer Science student with a strong interest in software engineering, 
-                        front-end development, and product development. I enjoy building projects that both solve problems 
+                        fullstack development, and product development. I enjoy building projects that both solve problems 
                         and allow me to express my creativity. I'm currently pursuing a Bachelor's of Science and I'm 
                         always learning new technologies as I'm currently learning React/Native, Tailwind, TypeScript and Go,
                         outside of regular coursework.
