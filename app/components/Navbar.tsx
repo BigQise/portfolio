@@ -12,6 +12,7 @@ import {
 } from "./ui/resizable-navbar";
 import Floppa from "../assets/floppa-floppa-spin.gif"
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavbarHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +44,9 @@ export default function NavbarHeader() {
           <NavbarLogo src={Floppa}/>
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-              <NavbarButton variant="primary">Contact</NavbarButton>
+              <NavbarButton href={"mailto:qise360@gmail.com"} variant="primary">
+                Contact
+              </NavbarButton>
           </div>
           </NavBody>
         
