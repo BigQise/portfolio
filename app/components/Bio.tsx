@@ -4,7 +4,7 @@
 export default function Bio() {
     return (
         <div id="bio" className="bg-linear-to-b from-background to-slate-950 min-h-screen flex flex-col items-center justify-center px-4 py-20">
-            <h2 className="text-foreground text-5xl font-bold mb-12 text-center">
+            <h2 className="text-foreground text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-12 text-center">
                 Background
             </h2>
             

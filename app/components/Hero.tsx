@@ -20,7 +20,7 @@ export default function Hero() {
     }, {
         text: "Qise,",
     }, {
-        text: "Aspiring",
+        text: "A",
     }, {
         text: "Software",
     }, { 
