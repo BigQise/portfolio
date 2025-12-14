@@ -30,8 +30,8 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div id="projects" className="bg-slate-950 min-h-screen flex flex-col items-center px-20 py-40">
-            <h2 className="text-foreground text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-12 text-center">
+        <div id="projects" className="bg-slate-950 min-h-screen flex flex-col items-center px-10 lg:px-20 py-40">
+            <h2 className="text-foreground text-3xl lg:text-5xl font-bold mb-12 text-center">
                 Projects
             </h2>
             <HoverEffect items={projects}/>

@@ -55,7 +55,7 @@ export const HoverEffect = ({
             <CardDescription>{item.description}</CardDescription>
             <CardChips>
               {item.technologies.map((tech, idx) => (
-                <Chip title={tech}/>
+                <Chip title={tech} key={idx}/>
               ))}
             </CardChips>
           </Card>
@@ -93,7 +93,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold font-sans tracking-wide text-2xl", className)}>
+    <h4 className={cn("text-zinc-100 font-bold font-sans tracking-wide text-lg lg:text-2xl", className)}>
       {children}
     </h4>
   );
@@ -108,7 +108,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-200 tracking-wide leading-relaxed text-lg font-sans",
+        "mt-8 text-zinc-200 tracking-wide leading-relaxed text-sm lg:text-lg font-sans",
         className
       )}
     >
@@ -124,7 +124,7 @@ export const CardChips = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-row mt-6">
+    <div className="flex flex-wrap flex-row mt-6">
       {children}
     </div>
   );

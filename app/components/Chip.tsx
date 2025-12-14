@@ -5,8 +5,8 @@ type ChipProps = {
 export default function Chip({ 
     title }: ChipProps) {
     return (
-        <div className="rounded-2xl bg-indigo-800/80 w-fit mr-2 px-3 py-1 justify-center">
-            <p className="font-sans text-m text-zinc-200">
+        <div className="rounded-2xl bg-indigo-900/80 w-fit h-fit mr-1 px-3 py-1 mt-2">
+            <p className="font-sans text-xs lg:text-base text-zinc-300">
             {title}    
             </p>
         </div>
