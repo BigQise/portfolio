@@ -77,6 +77,7 @@ export default function NavbarHeader() {
               <div className="flex w-full flex-col gap-4">
                 <NavbarButton
                   onClick={() => setIsMobileMenuOpen(false)}
+                  href={"mailto:qise360@gmail.com"}
                   variant="primary"
                   className="w-full"
                 >
