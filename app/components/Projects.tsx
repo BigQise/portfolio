@@ -8,13 +8,13 @@ const projects = [
   {
     title: "GopherTunnels",
     description:
-      "A mobile navigation app based off MapBox, made to help University of Minnesota students navigate the campus\'s confusing skyway and tunnel system",
+      "A mobile navigation app based off MapBox, made to help University of Minnesota students navigate the campus\'s confusing skyway and tunnel system. Releasing very soon!",
     technologies: ['React Native', 'Expo', 'TypeScript', 'Go', 'MySQL'],
     img: GopherTunnelsImg,
     link: "https://github.com/gopher-tunnels",
   },
   {
-    title: "GopherFit",
+    title: "GopherFit [WIP]",
     description:
       "A fitness app that includes workout, macro and calorie tracking as well as a social media page for UMN students to share fitness related content with eachother",
     technologies: ['React Native', 'Expo', 'TypeScript'],
@@ -34,7 +34,7 @@ const projects = [
 export default function Projects() {
     return (
         <div id="projects" className="bg-slate-950 min-h-screen flex flex-col items-center px-5 lg:px-15 py-40">
-            <h2 className="text-foreground text-3xl lg:text-5xl font-bold  xl:mb-12 text-center">
+            <h2 className="text-foreground text-3xl lg:text-5xl font-bold xl:mb-12 text-center">
                 Projects
             </h2>
             <HoverEffect items={projects}/>

@@ -20,14 +20,13 @@ export function ScrollIndicator() {
           ease: "easeInOut",
         },
       }}
-      onClick={() => {
-        window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
-      }}
     >
+      <a href={"#bio"}>
       <ChevronDown 
         className="w-8 h-8 text-foreground opacity-70 hover:opacity-100 transition-opacity" 
         strokeWidth={2}
       />
+      </a>
     </motion.div>
   );
 }
