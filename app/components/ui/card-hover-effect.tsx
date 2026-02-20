@@ -62,7 +62,7 @@ export const HoverEffect = ({
                 fill
                 className="absolute inset-0 object-cover rounded-2xl"
               />
-              <div className="absolute bottom-0 left-0 right-0 z-10 px-4 pt-2 pb-4 bg-linear-to-t backdrop-blur-xs from-black/60 to-black/30">
+              <div className="absolute bottom-0 left-0 right-0 z-10 px-4 pt-2 pb-4 bg-linear-to-t backdrop-blur-xs from-black/40 to-black/50">
                 <CardDescription className="mt-0">{item.description}</CardDescription>
                 <CardChips className="mt-3">
                   {item.technologies.map((tech, idx) => (
@@ -134,7 +134,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-200 tracking-wide leading-relaxed text-sm lg:text-lg font-sans relative z-10",
+        "mt-8 text-zinc-100 tracking-wide leading-relaxed text-sm lg:text-lg font-sans relative z-10",
         className
       )}
     >
