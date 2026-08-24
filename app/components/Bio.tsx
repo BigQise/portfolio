@@ -2,7 +2,7 @@
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 //TODO: update descriptions and add a mission section the right side of the background card
 
-const words = `I am a junior CS Student located in Minnesota, USA. I'm most familiar with front-end development but always looking to grow and explore the subfields of SWE.
+const words = `I am a 4th year CS Student located in Minnesota, USA. I'm most familiar with web development but always looking to grow and explore the subfields of SWE.
             I enjoy the creative process in and outside of programming and would love to work on unique or impactful projects that could help make the world a better place.`;
 
 export default function Bio() {
